@@ -1,0 +1,89 @@
+/* Ensure the page takes up full height */
+html[b-zy36d0tmp7], body[b-zy36d0tmp7] {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Main content pushes footer down */
+.content[b-zy36d0tmp7] {
+    flex-grow: 1;
+    padding: 20px;
+}
+
+/* Navbar Styles */
+.navbar[b-zy36d0tmp7] {
+    background-color: limegreen;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Logo */
+.logo[b-zy36d0tmp7] {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+}
+
+/* Navbar links */
+.nav-links[b-zy36d0tmp7] {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-links li[b-zy36d0tmp7] {
+    display: inline;
+}
+
+.nav-links a[b-zy36d0tmp7] {
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    text-decoration: none;
+    padding: 10px 15px;
+    transition: background 0.3s;
+}
+
+.nav-links a:hover[b-zy36d0tmp7] {
+    background-color: black;
+    border-radius: 5px;
+}
+
+/* Footer Styles */
+.footer[b-zy36d0tmp7] {
+    background-color: limegreen;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    width: 100%;
+    margin-top: auto; /* Push footer to bottom */
+}
+
+/* Footer links */
+.footer-links[b-zy36d0tmp7] {
+    display: flex;
+    justify-content: space-between;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.footer a[b-zy36d0tmp7] {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.footer a:hover[b-zy36d0tmp7] {
+    background-color: black;
+    border-radius: 5px;
+    padding: 5px;
+}
