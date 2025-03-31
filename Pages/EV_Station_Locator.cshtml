@@ -1,0 +1,31 @@
+﻿@page
+@model Rolsa_Technologies.Pages.EV_Station_LocatorModel
+@{
+}
+
+<h1>Find Nearby EV Charging Stations</h1>
+
+<form method="post">
+    <label for="address">Enter Address:</label>
+    <input type="text" id="address" name="Address" required>
+    <button type="submit">Find Stations</button>
+</form>
+
+@if (Model.Stations != null && Model.Stations.Any())
+{
+    <h2>Nearest Charging Stations</h2>
+    <ul>
+        @foreach (var station in Model.Stations)
+        {
+            <li>
+                <strong>@station.StationName</strong> - @station.Distance km away
+                <br>Availability: @station.StationAvailability
+                <br>App Payment: @(station.StationAppPayment ? "Yes" : "No")
+            </li>
+        }
+    </ul>
+}
+else if (Model.Stations != null)
+{
+    <p>No stations found nearby.</p>
+}

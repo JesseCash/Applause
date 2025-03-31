@@ -1,0 +1,56 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Relsa Technologies</title>
+    <link rel="stylesheet" href="~/css/site.css">
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <a class="logo" asp-page="/Index">🌱 GreenTech</a>
+            <div class="container">
+
+                <!-- Navbar Links -->
+                <ul class="nav-links">
+                    <li><a asp-page="/Index">Home</a></li>
+                    <li><a asp-page="/About">About</a></li>
+                    <li><a asp-page="/Services">Services</a></li>
+                    <li><a asp-page="/Contact">Contact</a></li>
+
+                    <!-- Dropdown Menu -->
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle">Account ▼</a>
+                        <ul class="dropdown-menu">
+                            <li><a asp-page="/Login">Login</a></li>
+                            <li><a asp-page="/Register">Register</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+
+    <main class="content">
+        @RenderBody()
+    </main>
+
+    <footer class="footer">
+        <div class="footer-links">
+            <div class="left-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+                <a href="#">Support</a>
+            </div>
+            <div class="right-links">
+                <a href="#">Contact</a>
+                <a href="#">Careers</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

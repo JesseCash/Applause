@@ -1,0 +1,43 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div class="index-sections">
+    <!-- Section 1 -->
+    <div class="index-container">
+        <div class="index-image">
+            <img src="~/images/1.png" alt="Solar Panels">
+        </div>
+        <div class="index-content">
+            <h1>Solar Energy Solutions</h1>
+            <p>Harness the power of the sun with our cutting-edge solar panels.</p>
+            <a class="btn-primary" asp-page="/Solar">Learn More</a>
+        </div>
+    </div>
+
+    <!-- Section 2 -->
+    <div class="index-container reverse">
+        <div class="index-content">
+            <h1>EV Charging Stations</h1>
+            <p>Find convenient EV charging stations near you for a seamless driving experience.</p>
+            <a class="btn-primary" asp-page="/EV_Stations">Find Stations</a>
+        </div>
+        <div class="index-image">
+            <img src="~/images/1.png" alt="EV Charging">
+        </div>
+    </div>
+
+    <!-- Section 3 -->
+    <div class="index-container">
+        <div class="index-image">
+            <img src="~/images/1.png" alt="Wind Turbine">
+        </div>
+        <div class="index-content">
+            <h1>Wind Energy Solutions</h1>
+            <p>Explore how wind power can contribute to a sustainable future.</p>
+            <a class="btn-primary" asp-page="/WindEnergy">Explore More</a>
+        </div>
+    </div>
+</div>

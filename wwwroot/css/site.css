@@ -1,0 +1,214 @@
+/* Global Styles */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: #000000;
+    color: #FFFFFF;
+    font-family: Arial, sans-serif;
+}
+
+/* Main content pushes footer down */
+.content {
+    flex-grow: 1;
+    padding: 20px;
+}
+
+/* Navbar Styles */
+.navbar {
+    background-color: limegreen;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Logo */
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+}
+
+/* Navbar links */
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    padding: 0;
+    margin: 0;
+}
+
+    .nav-links li {
+        display: inline;
+    }
+
+    .nav-links a {
+        color: white;
+        font-weight: bold;
+        font-size: 16px;
+        text-decoration: none;
+        padding: 10px 15px;
+        transition: background 0.3s;
+    }
+
+        .nav-links a:hover {
+            background-color: black;
+            border-radius: 5px;
+        }
+
+/* Footer Styles */
+.footer {
+    background-color: limegreen;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    width: 100%;
+    margin-top: auto; /* Push footer to bottom */
+}
+
+/* Footer links */
+.footer-links {
+    display: flex;
+    justify-content: space-between;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.footer a {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+    .footer a:hover {
+        background-color: black;
+        border-radius: 5px;
+        padding: 5px;
+    }
+
+/* Dropdown */
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: limegreen;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 120px;
+    top: 100%;
+    left: 0;
+    border-radius: 5px;
+}
+
+    .dropdown-menu li {
+        display: block;
+    }
+
+    .dropdown-menu a {
+        display: block;
+        padding: 10px;
+        color: white;
+        text-decoration: none;
+    }
+
+        .dropdown-menu a:hover {
+            background-color: black;
+        }
+
+.dropdown {
+    position: relative; /* Add this */
+}
+
+/* Show dropdown on hover */
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+/* Text Styles */
+h1 {
+    font-family: Arial, sans-serif;
+    font-size: 219%;
+    font-weight: bold;
+}
+
+h2 {
+    font-family: Arial, sans-serif;
+    font-size: 200%;
+}
+
+p {
+    font-family: Arial, sans-serif;
+    font-size: 131%;
+}
+
+strong {
+    color: #4CEF2E;
+    font-family: Arial, sans-serif;
+    font-size: 131%;
+}
+
+ul, ol, li {
+    color: #4CEF2E;
+    font-family: Arial, sans-serif;
+    font-size: 131%;
+}
+
+.index-sections {
+    display: flex;
+    flex-direction: column;
+    gap: 50px; /* Space between sections */
+    padding: 50px;
+}
+
+.index-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+    .index-container.reverse {
+        flex-direction: row-reverse; /* Reverse order for alternating layout */
+    }
+
+.index-image img {
+    width: 200px !important; /* Fixed width */
+    height: 200px !important; /* Fixed height */
+    border-radius: 50% !important; /* Makes it rounded */
+    object-fit: cover !important; /* Ensures the image maintains its aspect ratio */
+}
+
+
+.index-content {
+    max-width: 50%;
+    text-align: left;
+}
+
+    .index-content h1 {
+        font-size: 2rem;
+        font-weight: bold;
+    }
+
+    .index-content p {
+        font-size: 1.2rem;
+        margin-bottom: 15px;
+    }
+
+.btn-primary {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: limegreen;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+    .btn-primary:hover {
+        background-color: black;
+    }
